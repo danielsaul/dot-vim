@@ -17,6 +17,7 @@ set nocompatible
 
 "Auto update $MYVIMRC
 autocmd! bufwritepost .vimrc source $MYVIMRC
+autocmd! bufwritepost vimrc source $MYVIMRC
 
 " Spelling language
 setlocal spelllang=en_gb
@@ -176,6 +177,9 @@ if has("win32") || has("win64")
 
     " Auto change directory
     cd D:\
+
+    " Edit vimrc
+    nmap <leader>ev :e $HOME/vimfiles/vimrc<cr>
 endif
 
 " ************************************************************************
@@ -190,4 +194,14 @@ if has("gui_running")
     " Remove tab-bar and menu-bar
     set guioptions-=m
     set guioptions-=T
+endif
+
+" ************************************************************************
+" V I M
+"
+
+if !has("gui_running")
+    " Colorscheme
+    set background=dark
+    highlight Normal ctermbg=black ctermfg=white
 endif
