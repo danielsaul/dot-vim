@@ -202,6 +202,5 @@ endif
 
 if !has("gui_running")
     " Colorscheme
-    " set background=dark
-    " highlight Normal ctermbg=black ctermfg=white
+    highlight Normal ctermbg=black ctermfg=white
 endif
