@@ -197,7 +197,7 @@ if has("gui_running")
 endif
 
 " ************************************************************************
-" V I M
+" T E R M I N A L
 "
 
 if !has("gui_running")
