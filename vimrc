@@ -203,4 +203,6 @@ endif
 if !has("gui_running")
     " Colorscheme
     highlight Normal ctermbg=black ctermfg=white
+    " 256 colours in terminal
+    set t_Co=256 
 endif
