@@ -127,6 +127,11 @@ nmap <leader>ev :e $MYVIMRC<cr>
 " List buffers
 nmap <leader>b :ls<cr>
 
+" PHP documenter
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
+nnoremap <C-P> :call PhpDocSingle()<CR> 
+vnoremap <C-P> :call PhpDocRange()<CR> 
+
 " ************************************************************************
 " M I S C
 "
