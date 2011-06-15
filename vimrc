@@ -86,7 +86,7 @@ set softtabstop=4
 " Line wrapping options
 set wrap
 set textwidth=79
-set showbreak=>\
+set showbreak=>\ 
 
 " ************************************************************************
 " M A P P I N G S
