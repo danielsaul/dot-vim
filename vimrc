@@ -15,7 +15,7 @@ let mapleader = ","
 " Forget compatibility with Vi.
 set nocompatible
 
-"Auto update $MYVIMRC
+" Auto update $MYVIMRC
 autocmd! bufwritepost .vimrc source $MYVIMRC
 autocmd! bufwritepost vimrc source $MYVIMRC
 
@@ -35,7 +35,7 @@ syntax on
 " Specific file types
 " ActionScript
 au BufEnter,BufNewFile,BufRead *.as setf actionscript
-"Arduino
+" Arduino
 autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
 
 " ************************************************************************
@@ -92,7 +92,7 @@ set showbreak=>\
 " M A P P I N G S
 "
 
-"Vim IDE mappings
+" Vim IDE mappings
 set completeopt=longest,menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
@@ -154,7 +154,7 @@ let NERDTreeShowHidden=1
 " More useful command-line completion
 set wildmenu
 
-"Auto-completion menu
+" Auto-completion menu
 set wildmode=list:longest
 
 " What can I backspace over
