@@ -37,6 +37,8 @@ syntax on
 au BufEnter,BufNewFile,BufRead *.as setf actionscript
 " Arduino
 autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
+" SCSS
+au BufRead,BufNewFile *.scss set filetype=scss
 
 " ************************************************************************
 " T H E M E ,  L O O K  &  F E E L
