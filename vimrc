@@ -57,7 +57,7 @@ set mousehide
 set number
 
 " Colorscheme
-colors darkburn
+colors molokai
 
 " Always show status line
 set laststatus=2
@@ -183,7 +183,7 @@ if has("win32") || has("win64")
     set backup " enable backup
 
     " Auto change directory
-    cd D:\
+    cd C:\
 
     " Edit vimrc
     nmap <leader>ev :e $HOME/vimfiles/vimrc<cr>
@@ -197,7 +197,7 @@ if has("gui_running")
     " Font
     set guifont=Consolas:h11
     " Colorscheme
-    colors twilight
+    colors molokai
     " Remove tab-bar and menu-bar
     set guioptions-=m
     set guioptions-=T
