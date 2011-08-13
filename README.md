@@ -6,4 +6,6 @@
 * The folder will need renaming to `.vim` or `vimfiles` on Windows. 
 
 ##Credits
-Priyesh Patel
+Daniel Saul
+Priyesh Patel for original dot-vim which I stole
+
