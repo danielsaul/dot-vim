@@ -36,7 +36,7 @@ syntax on
 " ActionScript
 au BufEnter,BufNewFile,BufRead *.as setf actionscript
 " Arduino
-autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
+autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
 " SCSS
 au BufRead,BufNewFile *.scss set filetype=scss
 
