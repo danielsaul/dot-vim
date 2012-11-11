@@ -36,7 +36,9 @@ syntax on
 " ActionScript
 au BufEnter,BufNewFile,BufRead *.as setf actionscript
 " Arduino
+autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
 autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
+
 " SCSS
 au BufRead,BufNewFile *.scss set filetype=scss
 
@@ -51,7 +53,9 @@ set ruler
 set showcmd
 
 " Hide the mouse
-set mousehide
+" set mousehide
+
+set mouse=a
 
 " Line numbers
 set number
@@ -132,8 +136,11 @@ nmap <leader>b :ls<cr>
 " PHP documenter
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
 nnoremap <C-P> :call PhpDocSingle()<CR> 
-vnoremap <C-P> :call PhpDocRange()<CR> 
+vnoremap <C-P> :call PhpDocRange()<CR>
 
+"paste mode
+map <F11> :set invpaste<CR>
+set pastetoggle=<F11>
 " ************************************************************************
 " M I S C
 "
